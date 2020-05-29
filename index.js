@@ -3,6 +3,23 @@ var submitCourse = document.getElementById("submit-course");
 var loadDesc = document.getElementById("load-desc"); 
 var engInfo = document.getElementById("eng-info"); 
 var counter = 0; 
+var fname = document.getElementById("fname"); 
+var lname = document.getElementById("lname"); 
+var email = document.getElementById("email"); 
+var submitBtn = document.querySelector("#submit-info"); 
+
+submitBtn.addEventListener("click", function(){
+    if(fname.value == "" || fname.value === "First Name"){
+        alert("Please fill out first name"); 
+    }else if(lname.value == "" || lname.value === "Last Name"){
+        alert("Please fill out last name"); 
+    }else if(email.value == "" || lname.value === "Email"){
+        alert("Please fill out email"); 
+    }
+    else{
+        console.log("successfully filled out"); 
+    }
+}); 
 
 window.onload = function(){
     loadSurvey.style.display = "none"; 
@@ -28,4 +45,6 @@ function renderHTML(textObject){
     htmlText = "Mandatory: " + textObject[0].name + "<br>"; 
     engInfo.insertAdjacentHTML("beforeend", htmlText); 
 }
+
+
 
