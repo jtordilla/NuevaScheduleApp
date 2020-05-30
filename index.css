@@ -34,4 +34,23 @@
 #eng-info{
     margin: 20px; 
     font-size: 20px; 
+    font-family: sans-serif; 
+}
+.container{
+    max-height: 40px; 
+    overflow: hidden; 
+    transition: all .3s ease; 
+}
+.container.expand{
+    max-height: 1200px; 
+}
+#readMore{
+    font-size: 20px; 
+    margin: 20px; 
+    font-family: sans-serif; 
+}
+#listingHead{
+    font-size: 20px; 
+    margin: 20px; 
+    font-family: sans-serif; 
 }
