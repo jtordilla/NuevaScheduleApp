@@ -21,7 +21,7 @@ submitBtn.addEventListener("click", function(){
         alert("Please fill out first name"); 
     }else if(lname.value == "" || lname.value === "Last Name"){
         alert("Please fill out last name"); 
-    }else if(email.value == "" || lname.value === "Email"){
+    }else if(email.value == "" || email.value === "Email"){
         alert("Please fill out email"); 
     }
     else{
